@@ -1,11 +1,85 @@
 <!doctype html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css">
-    <title>Module2</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<title>Module2</title>
+<style>
+/********** Base styles **********/
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+/* Simple Responsive Framework. */
+.row {
+    width: 100%;
+}
+/********** Large devices only **********/
+@media (min-width: 992px) {
+    .col-lg-1, .col-lg-2, .col-lg-3 {
+        float: left;
+        width: 33.33%;
+    }
+}
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-1, .col-md-2, .col-md-3 {
+        float: left;   
+    }
+    .col-md-1 {
+        width: 50%; 
+    }
+    .col-md-2 {
+        width: 50%;    
+    }
+    .col-md-3 {
+        width: 100%;  
+    }
+}
+</style>
 </head>
 <body>
-    <h1>Hello, World! I'm happy to learn this course!!!</h1>
+<h1>Our Menu</h1>
+<div class="row">
+    <div class="col-lg-1 col-md-1">
+        <div>
+            <div id="p1" class="label">Chicken</div>
+                <p>
+                 Preheat oven to 450°F. 
+                 Arrange chicken breast fillets on an aluminum foil-lined baking sheet. 
+                 Season with kosher salt and black pepper. Stir together panko breadcrumbs,
+                 grated Parmesan, olive oil, chopped parsley, and chopped garlic clove. 
+                 Spread Dijon mustard on each chicken breast. 
+                </p>
+            </div>
+        </div>
+
+    <div class="col-lg-2 col-md-2">
+        <div>
+            <div id="p2" class="label">Beef</div>
+                <p>
+                Peel and roughly chop the onions, garlic and carrots, 
+                then trim and roughly chop the celery. Tie the bay and thyme sprigs together
+                with string. Heat 2 tablespoons of oil in a large casserole pan over a medium 
+                heat. and add the vegetables and herbs. Toss everything in the oil to coat,
+                then season. 
+                </p>
+            </div>
+        </div>
+    <div class="col-lg-3 col-md-3">
+        <div>
+             <div id="p3" class="label">Sushi</div>
+                <p>
+                 Rolling sushi is kind of like riding a bike: 
+                 once you have the sushi roll recipes and a few basic techniques down- 
+                 you will never forget how to do them. Rolls (also know as maki) are the most 
+                 common way to enjoy sushi. I will show you the 3 basic roll types:
+                 number one recipe, number two recipe, 3 recipe. 
+                </p>
+            </div>
+        </div>
+</div>
 </body>
 </html>
